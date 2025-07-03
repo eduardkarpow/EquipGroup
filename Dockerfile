@@ -45,5 +45,4 @@ RUN chown -R www-data:www-data /var/www/html/storage \
 
 EXPOSE 9000
 
-# Команда запуска PHP-FPM
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]

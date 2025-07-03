@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build:
-      context: .
+      context: . 
       dockerfile: Dockerfile
     container_name: laravel_app
     restart: unless-stopped
@@ -24,7 +24,7 @@ services:
       DB_PASSWORD: password
       APP_DEBUG: ${APP_DEBUG:-true}
       APP_ENV: ${APP_ENV:-local}
-      APP_URL: http://localhost:8000у
+      APP_URL: http://localhost:8000
     depends_on:
       db:
         condition: service_healthy
@@ -57,4 +57,4 @@ networks:
     driver: bridge
 
 volumes:
-  dbdata:
+  dbdata: #
