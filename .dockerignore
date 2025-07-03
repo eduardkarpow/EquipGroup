@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+node_modules
+/vendor
+/storage/*.log
+/public/hot
+/public/build
+/.vscode
+.idea
+Dockerfile
+docker/
+.DS_Store
+npm-debug.log
+yarn-error.log
